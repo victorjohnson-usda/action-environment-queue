@@ -7,7 +7,7 @@ async function run() {
         environment: core.getInput('environment'),
         token: core.getInput('github-token'),
         delay: Number(core.getInput('delay')),
-#        timeout: Number(core.getInput('timeout'))
+        timeout: Number(core.getInput('timeout'))
     }
 
     await queueWorkflow(inputs)
